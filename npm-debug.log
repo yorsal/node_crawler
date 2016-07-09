@@ -1,0 +1,184 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'livepool',
+1 verbose cli   '-g' ]
+2 info using npm@2.15.5
+3 info using node@v4.4.5
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'livepool', null ]
+7 verbose cache add spec livepool
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'livepool',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'livepool',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: 'latest',
+8 silly cache add   type: 'tag' }
+9 silly addNamed livepool@latest
+10 verbose addNamed "latest" is being treated as a dist-tag for livepool
+11 info addNameTag [ 'livepool', 'latest' ]
+12 silly mapToRegistry name livepool
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npm.taobao.org/
+15 silly mapToRegistry data Result {
+15 silly mapToRegistry   raw: 'livepool',
+15 silly mapToRegistry   scope: null,
+15 silly mapToRegistry   name: 'livepool',
+15 silly mapToRegistry   rawSpec: '',
+15 silly mapToRegistry   spec: 'latest',
+15 silly mapToRegistry   type: 'tag' }
+16 silly mapToRegistry uri https://registry.npm.taobao.org/livepool
+17 verbose addNameTag registry:https://registry.npm.taobao.org/livepool not in flight; fetching
+18 verbose request uri https://registry.npm.taobao.org/livepool
+19 verbose request no auth needed
+20 info attempt registry request try #1 at 13:03:31
+21 verbose request id 46f75a606d4f1e84
+22 http request GET https://registry.npm.taobao.org/livepool
+23 http 200 https://registry.npm.taobao.org/livepool
+24 verbose headers { date: 'Tue, 05 Jul 2016 05:03:32 GMT',
+24 verbose headers   'content-type': 'application/json; charset=utf-8',
+24 verbose headers   'content-length': '21567',
+24 verbose headers   connection: 'keep-alive',
+24 verbose headers   etag: '"543f-efTZ30ljwQ27MKS1iWkcHw"',
+24 verbose headers   'x-readtime': '32' }
+25 silly get cb [ 200,
+25 silly get   { date: 'Tue, 05 Jul 2016 05:03:32 GMT',
+25 silly get     'content-type': 'application/json; charset=utf-8',
+25 silly get     'content-length': '21567',
+25 silly get     connection: 'keep-alive',
+25 silly get     etag: '"543f-efTZ30ljwQ27MKS1iWkcHw"',
+25 silly get     'x-readtime': '32' } ]
+26 verbose get saving livepool to /Users/mac/.npm/registry.npm.taobao.org/livepool/.cache.json
+27 verbose correctMkdir /Users/mac/.npm correctMkdir not in flight; initializing
+28 silly addNameTag next cb for livepool with tag latest
+29 silly addNamed livepool@0.7.9
+30 verbose addNamed "0.7.9" is a plain semver version for livepool
+31 silly mapToRegistry name livepool
+32 silly mapToRegistry using default registry
+33 silly mapToRegistry registry https://registry.npm.taobao.org/
+34 silly mapToRegistry data Result {
+34 silly mapToRegistry   raw: 'livepool',
+34 silly mapToRegistry   scope: null,
+34 silly mapToRegistry   name: 'livepool',
+34 silly mapToRegistry   rawSpec: '',
+34 silly mapToRegistry   spec: 'latest',
+34 silly mapToRegistry   type: 'tag' }
+35 silly mapToRegistry uri https://registry.npm.taobao.org/livepool
+36 verbose addRemoteTarball https://registry.npm.taobao.org/livepool/download/livepool-0.7.9.tgz not in flight; adding
+37 verbose addRemoteTarball [ 'https://registry.npm.taobao.org/livepool/download/livepool-0.7.9.tgz',
+37 verbose addRemoteTarball   '74f81970c53304ff599633046d89f8fe72762de0' ]
+38 info retry fetch attempt 1 at 13:03:32
+39 info attempt registry request try #1 at 13:03:32
+40 http fetch GET https://registry.npm.taobao.org/livepool/download/livepool-0.7.9.tgz
+41 http fetch 200 https://registry.npm.taobao.org/livepool/download/livepool-0.7.9.tgz
+42 silly fetchAndShaCheck shasum 74f81970c53304ff599633046d89f8fe72762de0
+43 verbose addTmpTarball /var/folders/1r/l3n7czr90pjbkw2mksf7h0080000gn/T/npm-73178-c1571879/registry.npm.taobao.org/livepool/download/livepool-0.7.9.tgz not in flight; adding
+44 verbose addTmpTarball already have metadata; skipping unpack for livepool@0.7.9
+45 verbose correctMkdir /Users/mac/.npm correctMkdir not in flight; initializing
+46 silly cache afterAdd livepool@0.7.9
+47 verbose afterAdd /Users/mac/.npm/livepool/0.7.9/package/package.json not in flight; writing
+48 verbose correctMkdir /Users/mac/.npm correctMkdir not in flight; initializing
+49 verbose afterAdd /Users/mac/.npm/livepool/0.7.9/package/package.json written
+50 silly install resolved [ { name: 'livepool',
+50 silly install resolved     version: '0.7.9',
+50 silly install resolved     description: 'debugging proxy for web developers base on NodeJS',
+50 silly install resolved     keywords: [ 'proxy', 'debug', 'web', 'develop', 'reload', 'fiddler' ],
+50 silly install resolved     maintainers: [ [Object] ],
+50 silly install resolved     homepage: 'https://github.com/rehorn/livepool',
+50 silly install resolved     dependencies:
+50 silly install resolved      { colors: '^0.6.2',
+50 silly install resolved        mime: '^1.2.11',
+50 silly install resolved        rimraf: '^2.2.8',
+50 silly install resolved        'graceful-fs': '^3.0.2',
+50 silly install resolved        underscore: '^1.6.0',
+50 silly install resolved        'iconv-lite': '^0.4.3',
+50 silly install resolved        request: '^2.37.0',
+50 silly install resolved        'http-proxy': '^1.1.5',
+50 silly install resolved        'http-proxy-agent': '^0.2.6',
+50 silly install resolved        express: '^3.4.0',
+50 silly install resolved        'socket.io': '^1.0.6' },
+50 silly install resolved     repository: { type: 'git', url: 'https://github.com/rehorn/livepool.git' },
+50 silly install resolved     engines: { node: '>= 0.8.x' },
+50 silly install resolved     bugs: { url: 'https://github.com/rehorn/livepool/issues' },
+50 silly install resolved     bin: { livepool: './bin/livepool.js' },
+50 silly install resolved     preferGlobal: true,
+50 silly install resolved     main: 'node-webkit.html',
+50 silly install resolved     webkit: { plugin: true },
+50 silly install resolved     window:
+50 silly install resolved      { title: 'livepool ui',
+50 silly install resolved        toolbar: false,
+50 silly install resolved        frame: true,
+50 silly install resolved        width: 960,
+50 silly install resolved        height: 600,
+50 silly install resolved        min_width: 400,
+50 silly install resolved        min_height: 200 },
+50 silly install resolved     'node-main': './node-webkit.js',
+50 silly install resolved     _id: 'livepool@0.7.9',
+50 silly install resolved     dist:
+50 silly install resolved      { shasum: '74f81970c53304ff599633046d89f8fe72762de0',
+50 silly install resolved        size: 2478969,
+50 silly install resolved        noattachment: false,
+50 silly install resolved        tarball: 'http://registry.npm.taobao.org/livepool/download/livepool-0.7.9.tgz' },
+50 silly install resolved     _from: 'livepool@latest',
+50 silly install resolved     _npmVersion: '1.4.3',
+50 silly install resolved     _npmUser: { name: 'rehorn', email: 'sysucgh@gmail.com' },
+50 silly install resolved     directories: {},
+50 silly install resolved     publish_time: 1406116887266,
+50 silly install resolved     _cnpm_publish_time: 1406116887266,
+50 silly install resolved     _shasum: '74f81970c53304ff599633046d89f8fe72762de0',
+50 silly install resolved     _resolved: 'https://registry.npm.taobao.org/livepool/download/livepool-0.7.9.tgz' } ]
+51 info install livepool@0.7.9 into /usr/local/lib
+52 info installOne livepool@0.7.9
+53 verbose installOne of livepool to /usr/local/lib not in flight; installing
+54 verbose correctMkdir /Users/mac/.npm/_locks correctMkdir not in flight; initializing
+55 verbose lock using /Users/mac/.npm/_locks/livepool-ae448eb0748b3f5f.lock for /usr/local/lib/node_modules/livepool
+56 silly install write writing livepool 0.7.9 to /usr/local/lib/node_modules/livepool
+57 verbose unbuild lib/node_modules/livepool
+58 silly gentlyRm /usr/local/lib/node_modules/livepool is being purged from base /usr/local
+59 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/livepool
+60 verbose tar unpack /Users/mac/.npm/livepool/0.7.9/package.tgz
+61 verbose tar unpacking to /usr/local/lib/node_modules/livepool
+62 silly gentlyRm /usr/local/lib/node_modules/livepool is being purged
+63 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/livepool
+64 silly gunzTarPerm modes [ '755', '644' ]
+65 error tar.unpack untar error /Users/mac/.npm/livepool/0.7.9/package.tgz
+66 verbose unlock done using /Users/mac/.npm/_locks/livepool-ae448eb0748b3f5f.lock for /usr/local/lib/node_modules/livepool
+67 verbose fstream_path /usr/local/lib/node_modules/livepool
+68 verbose fstream_type Directory
+69 verbose fstream_class DirWriter
+70 verbose stack Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/livepool'
+70 verbose stack     at Error (native)
+71 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25
+71 verbose fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53
+71 verbose fstream_stack FSReqWrap.oncomplete (fs.js:82:15)
+72 verbose cwd /Users/mac/htdocs/github/node_crawler
+73 error Darwin 15.4.0
+74 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "livepool" "-g"
+75 error node v4.4.5
+76 error npm  v2.15.5
+77 error path /usr/local/lib/node_modules/livepool
+78 error code EACCES
+79 error errno -13
+80 error syscall mkdir
+81 error Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/livepool'
+81 error     at Error (native)
+81 error  { [Error: EACCES: permission denied, mkdir '/usr/local/lib/node_modules/livepool']
+81 error   errno: -13,
+81 error   code: 'EACCES',
+81 error   syscall: 'mkdir',
+81 error   path: '/usr/local/lib/node_modules/livepool',
+81 error   fstream_type: 'Directory',
+81 error   fstream_path: '/usr/local/lib/node_modules/livepool',
+81 error   fstream_class: 'DirWriter',
+81 error   fstream_stack:
+81 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:35:25',
+81 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:47:53',
+81 error      'FSReqWrap.oncomplete (fs.js:82:15)' ] }
+82 error Please try running this command again as root/Administrator.
+83 verbose exit [ -13, true ]
+84 verbose unbuild lib/node_modules/livepool
+85 silly gentlyRm /usr/local/lib/node_modules/livepool is being purged from base /usr/local
+86 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/livepool
